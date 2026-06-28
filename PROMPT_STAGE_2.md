@@ -703,3 +703,1085 @@ You will provide:
 4. Confirmation that the project builds successfully
 
 Then proceed to Stage 3: Farmer Verification & Product Management
+FarmTrust - Stage 3: Farmer Verification, Product Management, QR Authentication & Marketplace
+
+Continue the existing FarmTrust project.
+
+Do not recreate existing authentication or project structure.
+
+Update the current codebase with production-ready implementations.
+
+---
+
+Module 1 - Farmer Verification
+
+Create a complete verification workflow.
+
+Farmer uploads:
+
+- Aadhaar
+- PAN
+- Organic Certificate
+- Farm Registration (optional)
+- Farm Images (minimum 5)
+- Farm GPS Coordinates
+- Farm Description
+
+Status Flow:
+
+Pending
+
+↓
+
+Under Review
+
+↓
+
+Verified
+
+or
+
+Rejected
+
+Only VERIFIED farmers may sell products.
+
+Admin can:
+
+Approve
+
+Reject
+
+Request additional documents
+
+Suspend farmer
+
+Re-activate farmer
+
+Every action must be logged.
+
+---
+
+Module 2 - Product Management
+
+Verified farmers can:
+
+Add Product
+
+Edit Product
+
+Delete Product
+
+Deactivate Product
+
+Duplicate Product
+
+Inventory Management
+
+Fields:
+
+Product Name
+
+Category
+
+Description
+
+Organic Certification
+
+Price
+
+Quantity
+
+Unit
+
+Harvest Date
+
+Packaging Date
+
+Expiry Date
+
+Storage Instructions
+
+Product Images
+
+Batch Number
+
+Available Stock
+
+Minimum Order Quantity
+
+Maximum Order Quantity
+
+Product Status
+
+Featured Product
+
+Product Tags
+
+---
+
+Module 3 - Categories
+
+Create categories:
+
+Vegetables
+
+Fruits
+
+Grains
+
+Millets
+
+Pulses
+
+Spices
+
+Honey
+
+Milk
+
+Ghee
+
+Cold Pressed Oils
+
+Dry Fruits
+
+Tea
+
+Coffee
+
+Natural Fertilizers
+
+Seeds
+
+Medicinal Herbs
+
+Organic Plants
+
+Allow admin to add new categories.
+
+---
+
+Module 4 - QR Authentication Engine
+
+Every approved product batch receives one unique encrypted QR Code.
+
+Each QR stores:
+
+Product ID
+
+Farmer ID
+
+Batch Number
+
+Harvest Date
+
+Packaging Date
+
+Certificate ID
+
+Verification Timestamp
+
+Digital Signature
+
+Scanning QR shows:
+
+FarmTrust Verified
+
+Farmer Name
+
+Farm Name
+
+Farm Address
+
+Farm GPS
+
+Product Name
+
+Category
+
+Harvest Date
+
+Packaging Date
+
+Expiry Date
+
+Organic Certificate
+
+Verification Time
+
+Product Images
+
+If QR is:
+
+Revoked
+
+Copied
+
+Expired
+
+Tampered
+
+Unknown
+
+Display:
+
+WARNING
+
+This product is NOT authenticated by FarmTrust.
+
+Do not purchase this product.
+
+Provide:
+
+Report Product
+
+Contact FarmTrust
+
+Generate QR only after admin approval.
+
+Admin can revoke QR.
+
+Admin can regenerate QR.
+
+Maintain QR history.
+
+---
+
+Module 5 - Marketplace
+
+Customer Home
+
+Search
+
+Categories
+
+Filters
+
+Nearby Farms
+
+Trending Products
+
+Recently Added
+
+Top Rated Farmers
+
+Best Sellers
+
+Wishlist
+
+Featured Products
+
+Farmer Profile
+
+Product Reviews
+
+Product Details
+
+Related Products
+
+Recommendations
+
+---
+
+Module 6 - Orders
+
+Offline Payments Only.
+
+Customer places order.
+
+Farmer receives order.
+
+Farmer accepts or rejects.
+
+Customer tracks order.
+
+Order Status:
+
+Pending
+
+Accepted
+
+Preparing
+
+Ready
+
+Out for Delivery
+
+Delivered
+
+Cancelled
+
+Returned
+
+Generate invoice.
+
+Maintain order history.
+
+---
+
+Module 7 - Notifications
+
+Push Notifications
+
+Email Notifications
+
+SMS ready architecture
+
+Notify:
+
+New Order
+
+Order Accepted
+
+Order Cancelled
+
+Farmer Approved
+
+QR Generated
+
+Product Approved
+
+---
+
+Module 8 - Admin Dashboard
+
+Dashboard Cards
+
+Verified Farmers
+
+Pending Farmers
+
+Products
+
+Orders
+
+QR Generated
+
+QR Revoked
+
+Revenue Statistics (placeholder only)
+
+Top Selling Products
+
+Customer Count
+
+Analytics Charts
+
+Farmer Activity
+
+Recent Logins
+
+Audit Logs
+
+---
+
+Module 9 - Flutter UI
+
+Create complete screens.
+
+Home
+
+Categories
+
+Product Details
+
+Farmer Profile
+
+Cart
+
+Orders
+
+Wishlist
+
+Notifications
+
+QR Scanner
+
+QR Result Screen
+
+Farmer Dashboard
+
+Inventory
+
+Product Form
+
+Admin Dashboard
+
+Verification Queue
+
+QR Management
+
+Analytics
+
+Responsive
+
+Premium animations
+
+Dark Mode
+
+Airbnb-quality UI
+
+---
+
+Module 10 - APIs
+
+Implement complete APIs.
+
+Farmers
+
+Products
+
+Categories
+
+Inventory
+
+QR
+
+Marketplace
+
+Orders
+
+Reviews
+
+Wishlist
+
+Notifications
+
+Admin
+
+---
+
+Module 11 - Database
+
+Update schema.
+
+Create additional tables if needed.
+
+Optimize indexes.
+
+Maintain foreign keys.
+
+Audit logs.
+
+Soft delete.
+
+Timestamps.
+
+---
+
+Module 12 - Security
+
+Encrypt QR payload.
+
+Prevent duplicate QR.
+
+Prevent copied QR.
+
+Prevent replay attacks.
+
+Validate every scan.
+
+Log every verification.
+
+---
+
+Final Requirement
+
+Do not generate placeholder implementations.
+
+Update every related frontend, backend, database, controllers, services, routes, models, documentation, tests, and deployment configuration.
+
+Ensure the project builds successfully without compilation errors.
+
+Maintain clean architecture, SOLID principles, scalable folder structure, reusable components, and production-ready code throughout.
+# FARMTRUST - STAGE 4
+## Production Ready Mobile App
+
+You are now the Lead Software Architect, Senior UI/UX Designer, AI Engineer, Security Engineer, DevOps Engineer, QA Lead, and Product Manager.
+
+The project is already built.
+
+DO NOT rebuild anything.
+
+Instead, upgrade the entire application into a premium production-ready product.
+
+--------------------------------
+
+GOALS
+
+Make FarmTrust feel like an Airbnb + Stripe + Instagram quality application.
+
+Everything should feel premium.
+
+--------------------------------
+
+1. COMPLETE UI POLISH
+
+Improve every screen.
+
+• better spacing
+• premium typography
+• animations
+• glassmorphism
+• gradients
+• shadows
+• rounded cards
+• smooth page transitions
+• skeleton loading
+• shimmer effects
+• dark mode
+• accessibility
+• tablet responsive
+• foldable support
+
+--------------------------------
+
+2. ADVANCED FARMER DASHBOARD
+
+Show
+
+Today's Sales
+
+Weekly Sales
+
+Monthly Sales
+
+Top Products
+
+Inventory Status
+
+Orders
+
+Pending Deliveries
+
+QR Statistics
+
+Customer Growth
+
+Revenue Graphs
+
+Profit Graphs
+
+Pie Charts
+
+--------------------------------
+
+3. CUSTOMER EXPERIENCE
+
+Wishlist
+
+Favorite Farmers
+
+Order Tracking
+
+Delivery ETA
+
+Live Status
+
+Reorder
+
+Recently Purchased
+
+Recommendations
+
+Nearby Farmers
+
+Personalized Home Screen
+
+--------------------------------
+
+4. AI FEATURES
+
+AI should suggest
+
+Best selling products
+
+Pricing
+
+Demand Forecast
+
+Harvest Planning
+
+Inventory Prediction
+
+Customer Recommendations
+
+Seasonal Alerts
+
+Crop Suggestions
+
+--------------------------------
+
+5. QR SYSTEM
+
+Premium QR generation
+
+Beautiful printable QR
+
+Export PDF
+
+Download PNG
+
+Share QR
+
+QR analytics
+
+Scan history
+
+Verification
+
+--------------------------------
+
+6. NOTIFICATIONS
+
+Push Notifications
+
+Email Notifications
+
+SMS Ready
+
+Order Updates
+
+Payment Updates
+
+Harvest Alerts
+
+Low Inventory Alerts
+
+--------------------------------
+
+7. SECURITY
+
+JWT Authentication
+
+Refresh Tokens
+
+Role Based Access
+
+Secure APIs
+
+Rate Limiting
+
+Input Validation
+
+Encryption
+
+Audit Logs
+
+Device Management
+
+--------------------------------
+
+8. PERFORMANCE
+
+Lazy Loading
+
+Caching
+
+Pagination
+
+Image Optimization
+
+API Optimization
+
+Offline Support
+
+Background Sync
+
+--------------------------------
+
+9. MOBILE FEATURES
+
+Fingerprint Login
+
+Face Unlock
+
+Camera Scanner
+
+GPS
+
+Maps
+
+Offline Mode
+
+Local Storage
+
+Image Compression
+
+--------------------------------
+
+10. ADMIN PANEL
+
+Manage Farmers
+
+Manage Buyers
+
+Manage Products
+
+Approve Listings
+
+Manage Orders
+
+Revenue Dashboard
+
+Reports
+
+Analytics
+
+Export Reports
+
+--------------------------------
+
+11. EXPORTS
+
+Invoice PDF
+
+Excel Reports
+
+CSV Export
+
+Analytics Export
+
+QR Export
+
+--------------------------------
+
+12. TESTING
+
+Fix every warning.
+
+Fix every error.
+
+Remove unused code.
+
+Increase performance.
+
+Write unit tests.
+
+Write integration tests.
+
+--------------------------------
+
+13. DOCUMENTATION
+
+Update README
+
+API Documentation
+
+Deployment Guide
+
+Architecture Diagram
+
+Folder Structure
+
+Environment Variables
+
+--------------------------------
+
+14. FINAL REVIEW
+
+Scan the entire project.
+
+Refactor duplicated code.
+
+Improve naming.
+
+Improve scalability.
+
+Improve maintainability.
+
+Improve readability.
+
+Do not remove any existing feature.
+
+Do not simplify anything.
+
+Only improve.
+
+The final result should look like a startup that has received millions of dollars in funding and is ready for production deployment on Android, iOS, and Web.
+# FARMTRUST - STAGE 5
+## Enterprise Launch & Scale
+
+You are now acting as the CTO, Principal Mobile Engineer, Principal Backend Engineer, Cloud Architect, DevOps Engineer, Security Engineer, QA Lead, Product Manager, and Growth Engineer.
+
+The FarmTrust application is already fully built.
+
+DO NOT rebuild the application.
+
+DO NOT remove existing features.
+
+DO NOT simplify the project.
+
+Instead, prepare FarmTrust for a real-world production launch with enterprise-grade quality.
+
+--------------------------------------------------
+
+PRIMARY GOAL
+
+Transform FarmTrust into a production-ready startup capable of supporting thousands of farmers, buyers, and administrators with high reliability, excellent performance, and a premium user experience.
+
+--------------------------------------------------
+
+1. FINAL CODE QUALITY
+
+• Scan the entire codebase.
+• Remove dead code.
+• Fix all warnings.
+• Fix all errors.
+• Eliminate duplicated logic.
+• Improve readability.
+• Improve maintainability.
+• Improve modular architecture.
+• Improve naming conventions.
+• Optimize imports.
+• Ensure consistent coding standards.
+
+--------------------------------------------------
+
+2. PERFORMANCE OPTIMIZATION
+
+• Reduce app startup time.
+• Optimize API calls.
+• Compress images automatically.
+• Implement intelligent caching.
+• Background synchronization.
+• Offline-first behavior.
+• Optimize database queries.
+• Infinite scrolling where appropriate.
+• Lazy loading.
+• Reduce memory usage.
+• Improve battery efficiency.
+
+--------------------------------------------------
+
+3. SECURITY HARDENING
+
+• Secure authentication flow.
+• Refresh token handling.
+• Encrypt sensitive local storage.
+• Secure API communication.
+• CSRF/XSS protection where applicable.
+• SQL injection protection.
+• Input validation.
+• Audit logging.
+• Secure file uploads.
+• Secure QR verification.
+• Device/session management.
+
+--------------------------------------------------
+
+4. SCALABILITY
+
+Prepare architecture for:
+
+• 10,000+ users
+• 100,000+ products
+• Millions of QR scans
+• Horizontal backend scaling
+• Load balancing
+• Queue-based background jobs
+• CDN support
+• Object storage
+• Database indexing
+• Backup strategy
+
+--------------------------------------------------
+
+5. ANALYTICS
+
+Implement event tracking for:
+
+• App installs
+• User signups
+• Product views
+• Product purchases
+• QR scans
+• Farmer registrations
+• Buyer registrations
+• Session duration
+• Conversion funnels
+• Retention metrics
+
+--------------------------------------------------
+
+6. CRASH REPORTING
+
+Integrate production-ready crash reporting.
+
+Automatically capture:
+
+• App crashes
+• API failures
+• Network issues
+• Device information
+• Performance metrics
+• Error logs
+
+--------------------------------------------------
+
+7. MONITORING
+
+Prepare monitoring for:
+
+• Backend health
+• Database performance
+• API latency
+• Error rate
+• CPU usage
+• Memory usage
+• Storage usage
+• Queue status
+• Notification delivery
+
+--------------------------------------------------
+
+8. BACKUP & RECOVERY
+
+Implement:
+
+• Automated backups
+• Database restore procedures
+• File backup strategy
+• Disaster recovery documentation
+
+--------------------------------------------------
+
+9. RELEASE CONFIGURATION
+
+Prepare production builds for:
+
+Android
+
+• Signed Release Build
+• App Bundle
+• Release configuration
+• Versioning
+
+iOS
+
+• Release configuration
+• Archive readiness
+• Signing preparation
+
+Web
+
+• Production build
+• SEO optimization
+• PWA optimization
+
+--------------------------------------------------
+
+10. DEPLOYMENT
+
+Prepare deployment configuration for:
+
+Backend
+
+• Docker
+• Environment variables
+• Reverse proxy
+• HTTPS
+• Health checks
+
+Frontend
+
+• Production optimization
+• Static asset optimization
+
+--------------------------------------------------
+
+11. DOCUMENTATION
+
+Update and complete:
+
+• README
+• API documentation
+• Database schema
+• Deployment guide
+• Architecture documentation
+• Folder structure
+• Environment variable guide
+• Admin guide
+• User guide
+• Troubleshooting guide
+
+--------------------------------------------------
+
+12. ACCESSIBILITY
+
+Ensure:
+
+• Screen reader compatibility
+• Keyboard navigation
+• High contrast support
+• Large text support
+• Accessible forms
+• Accessible buttons
+• WCAG best practices
+
+--------------------------------------------------
+
+13. QUALITY ASSURANCE
+
+Run a complete project audit.
+
+Verify:
+
+• Authentication
+• QR generation
+• QR scanning
+• Inventory
+• Orders
+• Notifications
+• Reports
+• Dashboards
+• Offline mode
+• Synchronization
+• Mobile responsiveness
+
+Fix every issue found.
+
+--------------------------------------------------
+
+14. LAUNCH CHECKLIST
+
+Generate a complete launch checklist including:
+
+• Production readiness
+• Security review
+• Performance review
+• Testing summary
+• Known issues
+• Release notes
+• Version number
+• Deployment steps
+• Rollback strategy
+
+--------------------------------------------------
+
+15. FINAL OUTPUT
+
+At completion, provide:
+
+1. Complete project audit report.
+
+2. List of all improvements made.
+
+3. Remaining optional enhancements.
+
+4. Production readiness score (0–100%).
+
+5. Security score.
+
+6. Performance score.
+
+7. Code quality score.
+
+8. Scalability score.
+
+9. User experience score.
+
+10. A prioritized roadmap for future versions (v1.1, v1.2, v2.0).
+
+Do not delete or reduce any existing functionality. Preserve all features and improve the application into an enterprise-grade, launch-ready product.
+
