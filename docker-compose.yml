@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: farmtrust_postgres
+    environment:
+      POSTGRES_USER: ${DB_USER:-farmtrust}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-farmtrust_secure_password}
+      POSTGRES_DB: ${DB_NAME:-farmtrust_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-farmtrust}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - farmtrust-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../Dockerfile.backend
+    container_name: farmtrust_backend
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      PORT: 5000
+      DATABASE_URL: postgresql://${DB_USER:-farmtrust}:${DB_PASSWORD:-farmtrust_secure_password}@postgres:5432/${DB_NAME:-farmtrust_db}
+      JWT_SECRET: ${JWT_SECRET:-your_jwt_secret_key_change_in_production}
+      FIREBASE_PROJECT_ID: ${FIREBASE_PROJECT_ID}
+      FIREBASE_PRIVATE_KEY: ${FIREBASE_PRIVATE_KEY}
+      FIREBASE_CLIENT_EMAIL: ${FIREBASE_CLIENT_EMAIL}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    ports:
+      - "5000:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend/src:/app/src
+      - /app/node_modules
+    networks:
+      - farmtrust-network
+
+volumes:
+  postgres_data:
+
+networks:
+  farmtrust-network:
+    driver: bridge
